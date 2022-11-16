@@ -21,11 +21,11 @@
         </div>
         <div class="col-md-8 order-md-1">
 
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate action="/salvarusuario" method="POST">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="primeiroNome">Nome completo</label>
-                        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+                        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" name="userNome" required >
                         <div class="invalid-feedback">
                             É obrigatório inserir um nome válido.
                         </div>
@@ -36,7 +36,7 @@
                 <div class="mb-3">
                     <label for="cpfcnpj">CPF/CNPJ</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="cpfcnpj" placeholder="" required>
+                        <input type="text" class="form-control" id="cpfcnpj" placeholder="" name="userCPF_CNPJ" required >
                         <div class="invalid-feedback" style="width: 100%;">
                             Dado obrigatório.
                         </div>
@@ -44,7 +44,7 @@
 
                     <label for="tel">Telefone</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="tel" placeholder="" required>
+                        <input type="text" class="form-control" id="tel" placeholder="" name="userTelefone" required>
                         <div class="invalid-feedback" style="width: 100%;">
                             Dado obrigatório.
                         </div>
@@ -54,7 +54,7 @@
 
                 <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com">
+                    <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com" name="userEmail">
                     <div class="invalid-feedback">
                         Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
                     </div>
@@ -62,13 +62,13 @@
 
                 <div class="mb-3">
                     <label for="Senha">Senha</label>
-                    <input type="email" class="form-control" id="Senha" placeholder="">
+                    <input type="password" class="form-control" id="Senha" placeholder="" name="userSenha">
                     <div class="invalid-feedback">
                         Por favor, insira uma senha valida.
                     </div>
 
                     <label for="confirmesenha">Confirme a Senha</label>
-                    <input type="email" class="form-control" id="confirmesenha" placeholder="">
+                    <input type="password" class="form-control" id="confirmesenha" placeholder="" name="confirmarSenha">
                     <div class="invalid-feedback">
                         Por favor, insira uma senha valida.
                     </div>
@@ -77,17 +77,18 @@
 
                 <div class="mb-3">
                     <label for="razao-social">Razão Social</label>
-                    <input type="email" class="form-control" id="razao-social" placeholder="">
+                    <input type="text" class="form-control" id="razao-social" placeholder="" name="razaoSocial">
                 </div>
 
                 <div class="mb-3">
                     <label for="Segmento">Segmento</label>
-                    <input type="email" class="form-control" id="Segmento" placeholder="">
+                    <input type="text" class="form-control" id="Segmento" placeholder="" name="segmento">
                 </div>
+                <a href="/">home</a>
 
         </div>
-
-        <a href="login.html">Continuar</a>
+        <hr class="my-4">
+        <input type="submit" value="Continuar">
         </form>
 
     </div>
