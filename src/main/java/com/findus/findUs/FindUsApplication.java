@@ -18,4 +18,5 @@ public class FindUsApplication {
 		SpringApplication.run(FindUsApplication.class, args);
 	}
 
+
 }

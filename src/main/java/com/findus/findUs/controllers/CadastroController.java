@@ -29,9 +29,9 @@ public class CadastroController {
         return repository.findAll();
     }
 
-    @GetMapping("/usuario/{id}")
-    public Optional<Usuario> listaUsuarioUnico(@PathVariable(value="id") Long id) {
-        return repository.findById(id);
+    @GetMapping("/usuario/{id_Usuario}")
+    public Optional<Usuario> listaUsuarioUnico(@PathVariable(value="id_Usuario") Long id_Usuario) {
+        return repository.findById(id_Usuario);
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/cadastro") 

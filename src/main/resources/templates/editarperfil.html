@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find Us</title>
+	<meta name="description" content="Find Us" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon.png" />
+
+	<!-- Bootstrap & Plugins CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="index-1.html" class="logo">
+							<img src="assets/images/logo-white.svg" alt="Lavinya" />
+						</a>
+						<!-- ***** Logo End ***** -->
+
+						<!-- ***** Header Buttons Start ***** -->
+						<ul class="header-buttons">
+							<li><input type="text" placeholder="Search"></li>
+							<li><a href="#"><i class="fa fa-bell" style="color: white; font-size: 25px;"></i></a></li>
+							<li><a class="avatar-small" href="#">
+									<img src="assets/images/photos/comment-avatar.png" alt="">
+
+								</a></li>
+						</ul>
+						<!-- ***** Header Buttons End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
+
+
+	<section class="page">
+
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom">
+			<div class="container">
+				<div class="row">
+
+					<!-- ***** Superior Start ***** -->
+					<div class="container row">
+						<div class="col-lg-8 col-md-12 col-sm-12" style="flex-direction: row; display: flex; margin-bottom: 30px;
+						margin-top: 30px;">
+							<div class="avatar-big">
+								<img src="assets/images/photos/comment-avatar.png" alt="">
+							</div>
+							<div>
+								<h2>Nome Cliente / Editar Perfil</h2>
+								<a href="#">Voltar para tela de perfil</a>
+							</div>
+						</div>
+
+
+
+					</div>
+					<!-- ***** Superior Start ***** -->
+
+					<!-- ***** Aside Start ***** -->
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<aside class="default-aside">
+							<div class="sidebar">
+
+								<ul>
+									<li><a href="#">Conta</a></li>
+									<li><a href="#">Negócio</a></li>
+									<li><a href="#">Objetivos</a></li>
+								</ul>
+
+								<a href="#" class="secondary-btn" style="width: 100%;">Deletar Conta</a>
+							</div>
+						</aside>
+					</div>
+					<!-- ***** Aside End ***** -->
+					<!-- ***** Page Content Start ***** -->
+					<div class="col-lg-8 col-md-12 col-sm-12">
+						<div class="blog-list">
+							<form class="row" action="/update/1" method="post">
+								<!-- ***** Dados da Conta Start ***** -->
+								<div class="col-lg-12">
+									<div class="post-comment">
+										<h5 class="margin-bottom-30">Dados da Conta</h5>
+										<div class="comment-form">
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="form-item">
+														<label for="f1">Nome completo</label>
+														<input type="text" id="f1" th:field="*{userNome}">
+													</div>
+													<div class="form-item">
+														<label for="f2">Telefone</label>
+														<input type="text" id="f2" th:field="*{userTelefone}">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-12">
+													<div class="form-item">
+														<label for="f3">Senha</label>
+														<input type="text" id="f3" th:field="*{userSenha}">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-12">
+													<br>
+													<a href="#" class="primary-btn">Alterar Senha</a>
+												</div>
+												<div class="col-lg-12">
+													<div class="form-item">
+														<div class="avatar">
+															<img src="assets/images/photos/comment-avatar.png" alt="">
+														</div>
+														<br>
+														<a href="#">Alterar Imagem</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ***** Comment Form End ***** -->
+
+								<!-- ***** Comment Form Start ***** -->
+								<div class="col-lg-12">
+									<div class="post-comment">
+										<h5 class="margin-bottom-30">Dados do Negócio</h5>
+										<div class="comment-form">
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="form-item">
+														<label for="f1">Razão social</label>
+														<input type="text" id="f1" th:field="*{razaoSocial}" >
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="form-item">
+														<label for="f3">Segmento</label>
+														<input type="text" id="f3" th:field="*{segmento}">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ***** Comment Form End ***** -->
+
+								<!-- ***** Comment Form Start ***** -->
+								<div class="col-lg-12">
+									<div class="post-comment">
+										<h5 class="margin-bottom-30">Objetivos</h5>
+										<div class="row">
+											<div class="col-lg-4 col-md-6 col-sm-12">
+												<div class="feature-item-two">
+													<div class="title">
+														<div class="icon">
+															<i class="fa fa-window-restore"></i>
+														</div>
+														<h5 class="features-title">Site</h5>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6 col-sm-12">
+												<div class="feature-item-two active">
+													<div class="title">
+														<div class="icon">
+															<i class="fa fa-window-restore"></i>
+														</div>
+														<h5 class="features-title">Market
+															Place</h5>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6 col-sm-12">
+												<div class="feature-item-two active">
+													<div class="title">
+														<div class="icon">
+															<i class="fa fa-window-restore"></i>
+														</div>
+														<h5 class="features-title">Redes
+															Sociais
+														</h5>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6 col-sm-12">
+												<div class="feature-item-two">
+													<div class="title">
+														<div class="icon">
+															<i class="fa fa-window-restore"></i>
+														</div>
+														<h5 class="features-title">Consultoria de Marketing
+														</h5>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6 col-sm-12">
+												<div class="feature-item-two">
+													<div class="title">
+														<div class="icon">
+															<i class="fa fa-window-restore"></i>
+														</div>
+														<h5 class="features-title">Identidade Visual
+														</h5>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6 col-sm-12">
+												<div class="feature-item-two">
+													<div class="title">
+														<div class="icon">
+															<i class="fa fa-window-restore"></i>
+														</div>
+														<h5 class="features-title">Redesign
+														</h5>
+													    </div>
+													<div class="col-lg-4 col-md-12 col-sm-12 save-edition">
+															<input type="submit" value="Salvar alterações">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ***** Comment Form End ***** -->
+
+						  </form>
+						</div>
+					</div>
+					<!-- ***** Page Content End ***** -->
+
+
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+	</section>
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="assets/js/scrollreveal.min.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/imgfix.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<!-- Global Init -->
+	<script src="assets/js/custom.js"></script>
+</body>
+
+</html>
